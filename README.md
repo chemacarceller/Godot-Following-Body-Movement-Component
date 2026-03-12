@@ -2,13 +2,9 @@
 
 This is the development of a basic movement component designed to be attached to a Node3D enabling this node to follow a CollisionObject3D
 
-The demo folder contains an example of usage of this component
-
-Also this component has been tested in https://jocarpe.itch.io/third-person-character-demo
+This component has been tested in https://jocarpe.itch.io/third-person-character-demo
 
 This is a demo in continuous development to test all the components developed and in the process of future development. 
-
-It also adds the ability to change characters and view resource consumption via a plugin. 
 
 A detailed explanation of how the demo works is available on the itch.io page indicated. 
 
