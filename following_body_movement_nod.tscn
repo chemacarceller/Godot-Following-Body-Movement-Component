@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cmaef053m0m5r"]
-
-[ext_resource type="Script" uid="uid://b8icu7lg8ns47" path="res://utils/components/movements/following_body_movement_nod.gd" id="1_mu4fl"]
-
-[node name="FollowingBodyMovement" type="Node"]
-script = ExtResource("1_mu4fl")
