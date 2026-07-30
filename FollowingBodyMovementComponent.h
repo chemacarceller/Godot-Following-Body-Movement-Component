@@ -33,14 +33,13 @@ class FollowingBodyMovementComponent : public Node {
         float _minHeight = 1.0f;
 
         // The NodePath of the object that the object holding this component should follow
-        // Designed to be specified in the editor
-        NodePath _body_to_follow_path = NodePath("");
+        NodePath _bodyToFollowPath = NodePath("");
 
         // Private variables for internal use without exposing to Godot not underscored 
 
         // The Node3D object that the object holding this component should follow
         // Can only be specified at runtime; intended for prefabs instantiated at runtime.
-        Node3D *body_to_follow = nullptr;
+        Node3D *bodyToFollow = nullptr;
 
         // Node3D object to which this component has been linked
         Node3D *parentActor = nullptr;
@@ -62,23 +61,23 @@ class FollowingBodyMovementComponent : public Node {
         void _notification(int what);
 
         // Getters and setters for the properties
-        void set_enabled(bool value);
-        bool is_enabled() const;
+        void set_enabled(bool value) { _isEnabled = value; }
+        bool is_enabled() const { return _isEnabled; }
 
-        void set_speed(float value);
-        float get_speed() const;
+        void set_speed(float value) { _speed = value; }
+        float get_speed() const { return _speed; }
 
-        void set_distance(float value);
-        float get_distance() const;
+        void set_distance(float value) { _distance = value; }
+        float get_distance() const { return _distance; }
 
-        void set_min_height(float value);
-        float get_min_height() const;
+        void set_minHeight(float value) { _minHeight = value; }
+        float get_minHeight() const { return _minHeight; }
 
-        void set_body_to_follow(Node3D *value);
-        Node3D *get_body_to_follow() const;
+        void set_bodyToFollow(Node3D *value) { bodyToFollow = value; }
+        Node3D *get_bodyToFollow() const { return bodyToFollow; }
 
-        void set_body_to_follow_path(NodePath value);
-        NodePath get_body_to_follow_path() const;
+        void set_bodyToFollowPath(NodePath value) { _bodyToFollowPath = value; }
+        NodePath get_bodyToFollowPath() const { return _bodyToFollowPath; }
 };
 
-#endif // FOLLOWING_BODY_MOVEMENT_COMPONENT_H
+#endif
