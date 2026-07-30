@@ -4,9 +4,9 @@
     compatibility_minimum = "4.1"
 
 [libraries]
-    windows.debug.x86_64 = "res://main/bin/FollowingBodyMovementComponent.windows.template_debug.dll"
-    windows.release.x86_64 = "res://main/bin/FollowingBodyMovementComponent.windows.template_release.dll"
-    linux.debug.x86_64 = "res://main/bin/FollowingBodyMovementComponent.linux.template_debug.so"
-    linux.release.x86_64 = "res://main/bin/FollowingBodyMovementComponent.linux.template_release.so"
+    windows.debug.x86_64 = "res://bin/FollowingBodyMovementComponent.windows.template_debug.dll"
+    windows.release.x86_64 = "res://bin/FollowingBodyMovementComponent.windows.template_release.dll"
+    linux.debug.x86_64 = "res://bin/FollowingBodyMovementComponent.linux.template_debug.so"
+    linux.release.x86_64 = "res://bin/FollowingBodyMovementComponent.linux.template_release.so"
     macos.debug = ""
     macos.release = ""

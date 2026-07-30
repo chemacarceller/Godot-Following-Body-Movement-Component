@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="FollowingBodyMovementComponent" inherits="Node" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/godotengine/godot/master/doc/class.xsd">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_bodyToFollow" qualifiers="const">
+			<return type="Node3D" />
+			<description>
+			</description>
+		</method>
+		<method name="set_bodyToFollow">
+			<return type="void" />
+			<param index="0" name="value" type="Node3D" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="_bodytoFollowPath" type="NodePath" setter="set_bodyToFollowPath" getter="get_bodyToFollowPath" default="NodePath(&quot;&quot;)">
+		The NodePath of the object that the object holding this component should follow.
+		</member>
+		<member name="_distance" type="float" setter="set_distance" getter="get_distance" default="3.0">
+		Distance at which the object being pursued will stop
+		</member>
+		<member name="_isEnabled" type="bool" setter="set_enabled" getter="is_enabled" default="true">
+		Indicates if the component is enabled or not
+		</member>
+		<member name="_minHeight" type="float" setter="set_minHeight" getter="get_minHeight" default="1.0">
+		Height at which the object being pursued will remain
+		</member>
+		<member name="_speed" type="float" setter="set_speed" getter="get_speed" default="3.0">
+		Specifies the speed at which the Node3D linked to this component will move.
+		</member>
+	</members>
+</class>
